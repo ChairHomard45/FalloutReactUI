@@ -1,0 +1,75 @@
+@import url('./Animation.css');
+
+/* p animation blink */
+.Home-div p span:after{
+    animation:blink 1s infinite;
+    content:"_";
+}
+
+.btn-theme-login_signup{
+    background-color:rgb(0, 255, 0);
+    border: none;
+    padding:10px;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.Home-div-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.Home-div-container-sub{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.Home-div-container-label {
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.Home-div-container-label label{
+    flex-grow:1;
+    background-color: rgb(1, 13, 0);
+}
+
+
+.Home-div-container-label input{
+    border:none;
+    background-color: transparent;
+    margin-left:10px;
+    flex-grow: 1;
+    color:white;
+    padding:10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    right:0;
+}
+
+.Home-div-container form button{
+    border: none;
+    margin-top: 2px;
+    width:100%;
+    height:30%;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Active / Hover*/ 
+
+.Home-div-container form label:hover, .Home-div-container form input:hover{
+    background: rgb(0, 255, 0);
+    border: 0px rgb(0, 255, 0) solid;
+    color:black;
+}
+
+.Home-div-container form label input:focus{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

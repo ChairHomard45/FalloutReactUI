@@ -1,0 +1,16 @@
+{
+  "radiostations": [
+    {
+      "name": "SkyrockFM",
+      "url": "http://icecast.skyrock.net/s/natio_mp3_128k"
+    },
+    {
+      "name": "Destroy FM",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+      "name": "NRJ",
+      "url": "https://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3?origine=fluxradios"
+    }
+  ]
+}

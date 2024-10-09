@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Mono&display=swap');
+
+@import url('./Animation.css');
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-div{
+    margin:20px;
+}
+
+.main-div::before{
+        animation:wave 15s infinite ease-in-out;
+        content:"";
+        height:20vh;
+        left:0;
+        opacity:.5;
+        position:absolute;
+        right:0;
+        z-index:1;
+        pointer-events: none;
+}
+
+:root{
+    background-color: #10170f;
+    font-family: 'Orbitron', sans-serif;
+    color:white;
+    box-shadow: inset 0 0 50px 30px #000000;
+}
+
+:root::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-linear-gradient(
+      0,
+      transparent,
+      transparent 1px,
+      rgba(98, 98, 98, 0.2) 2px,
+      rgba(0, 0, 0, .2) 4px,
+      transparent 5px
+    ), url(#noise);
+    pointer-events: none;
+}
+
+.screen-reflection {
+    background: linear-gradient(150deg, #fff, rgba(0, 0, 0, 0));
+    opacity: 0.07;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Links */
+.MainNavLinks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.MNavLinks{
+    animation:colorPulse 5s infinite ease-in-out;
+    text-decoration: none;
+    color:rgb(0, 255, 0);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.MNavLinks-img{
+    margin-bottom:2rem;
+    margin-left:0;
+}
+
+.SubNavLinks{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.NavLinks{
+    text-decoration: none;
+    color:rgb(0, 255, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin:15px;
+}
+
+.MainNavLinks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Active Links */
+
+.MNavLinks.active{
+    animation: borderPulse 5s infinite ease-in-out;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-width: 0px 4px 0px 4px;
+    border-style: double;
+    position: relative;
+    font-weight: bold;
+}
+
+.MNavLinks.active::after , .MNavLinks.active::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    height: 2px;
+    animation: backgroundPulse 5s infinite ease-in-out,
+    heightBar 0.5s normal ease-in-out;
+    width: 100vw; 
+}
+
+.MNavLinks.active::before {
+    right: 100%;
+}
+
+.MNavLinks.active::after {
+    left: 100%;
+}
+

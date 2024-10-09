@@ -1,0 +1,45 @@
+@import url('./Animation.css');
+
+.RadioList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 20px;
+  }
+  
+  .RadioList button {
+    background: none;
+    border: none;
+    animation:borderPulse 5s infinite ease-in-out;
+    color:rgb(0, 255, 0);
+    font-size: 1.4rem;
+    margin: 5px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 500px;
+    cursor: pointer;
+  }
+
+  .RadioList button:hover {
+    background: rgb(0, 255, 0);
+    border: 0px rgb(0, 255, 0) solid;
+    animation:borderPulse 5s infinite ease-in-out;
+    color:black;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  .RadioList button.selected {
+    background-color: #00ff00;
+    color: rgb(0, 0, 0);
+  }
+
+  .RadioList button.selected::before{
+    content:'';
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    transform: translate(-30px,4px);
+    position:absolute;
+}
