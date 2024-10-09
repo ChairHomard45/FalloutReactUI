@@ -23,7 +23,7 @@
 
   .RadioList button:hover {
     background: rgb(0, 255, 0);
-    border: 0px rgb(0, 255, 0) solid;
+    border: 0 rgb(0, 255, 0) solid;
     animation:borderPulse 5s infinite ease-in-out;
     color:black;
     font-size: 1.4rem;

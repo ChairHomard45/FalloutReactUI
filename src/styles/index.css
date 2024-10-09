@@ -106,7 +106,7 @@ html, body {
     animation: borderPulse 5s infinite ease-in-out;
     padding-left: 1em;
     padding-right: 1em;
-    border-width: 0px 4px 0px 4px;
+    border-width: 0 4px 0 4px;
     border-style: double;
     position: relative;
     font-weight: bold;

@@ -64,7 +64,7 @@
 
 .Home-div-container form label:hover, .Home-div-container form input:hover{
     background: rgb(0, 255, 0);
-    border: 0px rgb(0, 255, 0) solid;
+    border: 0 rgb(0, 255, 0) solid;
     color:black;
 }
 
